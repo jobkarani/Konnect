@@ -1,4 +1,3 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +9,520 @@ body,html{
     overflow-y: auto;
     margin: 0;
     padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
 }
+  
+  .nav {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding: 10px 40px;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #000;
+    padding: 0 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 26px 30px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .btn{
+    background: #1CA6DD;
+    border-radius: 60px;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 16px 30px !important;
+    text-align: center;
+    color: #FFFFFF !important;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
 
+  .top-banner{
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-photo/handsome-young-afroamerican-man-employee-feeling-excited-gesturing-actively-keeping-fists-clenched-e_1258-117643.jpg?w=826&t=st=1682743455~exp=1682744055~hmac=7997a02b27519e752c82c3db168c4fed9e6972c88e6e6159d3ce97a12749bba4");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .text{
+    width: 100%;
+    height: 68vh;
+    background: linear-gradient(to right, rgb(0,0,0, .9)50%, transparent 100%);
+    padding: 10% 0;
+  }
+
+  .h3{
+    margin: 40px 0;
+    font-weight: 700;
+    font-size: 54px !important;
+    line-height: 65px;
+    color: #FFFFFF !important;
+    padding: 0 40px;
+  }
+
+  .h3 span{
+    color:  #1CA6DD;
+  }
+
+  .p{
+    width: 443px;
+    height: 126px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 0 40px;
+  }
+
+  .btn-banner{
+    width: 211px;
+    height: 43px;
+    background: #1CA6DD;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 40px;
+    margin: 0 40px;
+  }
+
+  .mid{
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .left{
+    width: 50%;
+    padding: 10px 40px;
+  }
+
+  .left img{
+    margin: 10px 20px;
+    width: 564px;
+    height: 364px;
+  }
+
+  .para{
+    border-left: 3px solid #1CA6DD;
+    border-radius: 10px;
+    float: right;
+    width: 70%;
+    background: #F5F5F5;
+    padding: 10px 20px;
+  }
+
+  .h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .pam li{
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+
+  .right{
+    width: 50%;
+    padding: 10px 40px;
+  }
+
+  .topper-flex{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+
+  hr{
+    width: 20%;
+    height: 5px;
+    background-color: #1CA6DD;
+  }
+
+  .topper{
+    width: 80%;
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .title{
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #1CA6DD;
+  }
+
+  .paras{
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+  .bottom{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .lef .h1{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #FFFBFB;
+  }
+
+  .lef{
+    padding: 10px 20px;
+    width: 50%;
+    background-color: #1CA6DD;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+
+  .insight-para{
+    color: #FFFFFF;
+  }
+
+  .rig{
+    padding: 10px 20px;
+    width: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 100px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  }
+
+  .rig .h1{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+  .innov-para{
+    color: #000;
+  }
+
+  .mid-2, .mid-3{
+    display: flex;
+    width: 100%;
+  }
+
+  .lefth{
+    padding: 10% 10px;
+    margin: 10px 40px;
+    width: 50%;
+    height: 60vh;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+
+  .righth{
+    width: 50%;
+    margin: 10px 40px;
+  }
+
+  .righth img{
+    width: 100%;
+    height: 60vh;
+    filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+  }
+
+  .lefth .h22{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1CA6DD;
+  }
+
+  .miss{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .leftt{
+    width: 50%;
+    margin: 10px 40px;
+  }
+
+  .leftt img{
+    width: 100%;
+    height: 60vh;
+    filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+  }
+
+  .rightt{
+    padding: 10% 10px;
+    margin: 10px 40px;
+    width: 50%;
+    height: 60vh;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+
+  .rightt .h22{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1CA6DD;
+  }
+
+  .cards{
+    padding: 20px 10px;
+  }
+  
+  .h33{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .cars{
+    padding: 0 40%;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (250px);
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+    grid-gap: 15px;
+  }
+
+  .car{
+    margin: 20px 0;
+    padding: 10px 8px;
+    left: calc(50% - 270px/2 - 531px);
+    top: calc(50% - 700px/2 + 625.5px);
+    background: linear-gradient(0deg, #FFFEFE, #FFFEFE), #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .car ul li {
+    list-style-type: none;
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .btn-p{
+    margin: 0 40px;
+    text-align: center;
+    background-color: #1CA6DD;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+  }
+
+  .car i{
+    margin: 20px 40%;
+    color: #1CA6DD;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .mbps{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 116px;
+    color: #03103E;
+  }
+
+  .mbps span{
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 116px;
+    color: #03103E;
+  }
+
+  .map{
+    width: 100%;
+  }
+
+  iframe{
+    width: 100%;
+  }
+
+  .contact{
+    background-color: #fff !important;
+    box-shadow: 0px 1px 100px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 70%;
+    padding: 20px 0;
+    margin-left: 15%;
+    margin-right: 5%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (150px);
+    grid-template-columns: repeat(4, 150px);
+    justify-content: center;
+    grid-gap: 15px;
+  }
+
+  .cont i{
+    color: #1CA6DD;
+    text-align: center;
+    margin: 0 30%;
+  }
+
+  .top-footer{
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-photo/sassy-cute-feminine-africanamerican-girl-s-headband-sweater-smiling-cheeky-flirty-look-camera-tur_1258-142573.jpg?w=826&t=st=1682766714~exp=1682767314~hmac=4ce47f19c7a739590fd3cfd5c5c7fabd42a3bdc059a0c0071e0ad822dcf386ea");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .textt{
+    width: 100%;
+    height: 55vh;
+    padding: 10% 0;
+    background: linear-gradient(to right, rgb(0,0,0, .9)40%, transparent 100%);
+  }
+  .mid-title{
+    text-transform: uppercase;
+    color: #1CA6DD;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .btn-title{
+    margin: 0 40%;
+    background-color: #1CA6DD;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 20%;
+  }
+
+  .low-title{
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+  }
+  .low-footer{
+    background-color: #1CA6DD;
+  }
+  .tex{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+  }
 @media only screen and (max-width: 850px) {
-    
+
 }
