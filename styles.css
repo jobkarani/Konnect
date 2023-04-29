@@ -64,6 +64,17 @@ body,html{
   }
   
   @media (max-width:600px) {
+    .nav > .nav-header > .nav-title {
+      display: inline-block;
+      font-size: 22px;
+      color: #000;
+      padding: 0 0;
+    }
+
+    .nav-title img{
+      width: 50%;
+    }
+
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -83,7 +94,7 @@ body,html{
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #eee;
+      border-top: 2px solid #000;
     }
     .nav > .nav-links {
       position: absolute;
@@ -99,6 +110,7 @@ body,html{
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+      color: #fff;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
@@ -523,6 +535,406 @@ body,html{
     line-height: 39px;
     color: #FFFFFF;
   }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 500px) {
+  .top-banner{
+    width: 100%;
+    background-image: url("https://img.freepik.com/premium-photo/portrait-handsome-afro-man-using-his-mobile-street_211139-1546.jpg?size=626&ext=jpg&ga=GA1.1.1780342939.1675861927&semt=ais");
+    height: 73vh;
+  }
 
+  .text{
+    width: 100%;
+    height: 73vh;
+    background: linear-gradient(to right, rgb(0,0,0, .9)0%, transparent 100%);
+    padding: 20% 0;
+  }
+
+  .h3{
+    margin: 40px 0;
+    font-weight: 700;
+    font-size: 34px !important;
+    line-height: none;
+    color: #FFFFFF !important;
+    padding: 0 20px;
+  }
+
+  .h3 span{
+    color:  #1CA6DD;
+  }
+
+  .p{
+    width: 100%;
+    height: 126px;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: none;
+    color: #FFFFFF;
+    padding: 0 20px;
+  }
+
+  .btn-banner{
+    padding: 10px 20px;
+    margin: 0 20px;
+  }
+
+  .mid{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .left{
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .left img{
+    margin: 10px 0;
+    width: 100%;
+    height: 364px;
+  }
+
+  .para{
+    border-left: 3px solid #1CA6DD;
+    border-radius: 10px;
+    float: right;
+    width: 100%;
+    background: #F5F5F5;
+    padding: 10px 20px;
+  }
+
+  .h2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: none;
+    color: #000000;
+  }
+
+  .pam li{
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: none;
+    color: #000000;
+  }
+
+  .right{
+    width: 100%;
+    padding: 10px 40px;
+  }
+
+  .topper-flex{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 5% 0;
+  }
+
+  hr{
+    width: 40%;
+    height: 5px;
+    background-color: #1CA6DD;
+  }
+
+  .topper{
+    width: 80%;
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .title{
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: none;
+    text-transform: capitalize;
+    color: #1CA6DD;
+  }
+
+  .paras{
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: none;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+  .bottom{
+    display: block;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .lef .h1{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: none;
+    text-transform: capitalize;
+    color: #FFFBFB;
+  }
+
+  .lef{
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #1CA6DD;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+
+  .insight-para{
+    color: #FFFFFF;
+  }
+
+  .rig{
+    margin: 5% 0;
+    padding: 10px 20px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 100px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  }
+
+  .rig .h1{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+  .innov-para{
+    color: #000;
+  }
+
+  .mid-2, .mid-3{
+    display: block;
+    width: 100%;
+  }
+
+  .lefth{
+    padding: 10% 10px;
+    margin: 10px 0;
+    width: 100%;
+    height: 30vh;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+
+  .righth{
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .righth img{
+    width: 100%;
+    height: 30vh;
+    filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+  }
+
+  .lefth .h22{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1CA6DD;
+  }
+
+  .miss{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .leftt{
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .leftt img{
+    width: 100%;
+    height: 30vh;
+    filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+  }
+
+  .rightt{
+    padding: 10% 10px;
+    margin: 10px 0;
+    width: 100%;
+    height: 30vh;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+
+  .rightt .h22{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1CA6DD;
+  }
+  .cards{
+    padding: 20px 10px;
+  }
+  
+  .h33{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .cars{
+    padding: 0 20%;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (250px);
+    grid-template-columns: repeat(1, 250px);
+    justify-content: center;
+    grid-gap: 15px;
+  }
+
+  .car{
+    margin: 20px 0;
+    padding: 10px 8px;
+    left: calc(50% - 270px/2 - 531px);
+    top: calc(50% - 700px/2 + 625.5px);
+    background: linear-gradient(0deg, #FFFEFE, #FFFEFE), #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .car ul li {
+    list-style-type: none;
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .btn-p{
+    margin: 0 40px;
+    text-align: center;
+    background-color: #1CA6DD;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+  }
+
+  .car i{
+    margin: 20px 40%;
+    color: #1CA6DD;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .mbps{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 116px;
+    color: #03103E;
+  }
+
+  .mbps span{
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 116px;
+    color: #03103E;
+  }
+
+  .map{
+    width: 100%;
+  }
+
+  iframe{
+    width: 100%;
+  }
+
+  .contact{
+    background-color: #fff !important;
+    box-shadow: 0px 1px 100px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (150px);
+    grid-template-columns: repeat(2, 150px);
+    justify-content: center;
+    grid-gap: 15px;
+  }
+
+  .cont i{
+    color: #1CA6DD;
+    text-align: center;
+    margin: 0 30%;
+  }
+
+  .top-footer{
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-photo/cheerful-afroamerican-model-sitting_23-2148440594.jpg?size=626&ext=jpg&ga=GA1.1.1780342939.1675861927&semt=ais");
+  }
+
+  .textt{
+    width: 100%;
+    height: 55vh;
+    padding: 30% 0;
+    background: linear-gradient(to right, rgb(0,0,0, .9)0%, transparent 100%);
+  }
+  .mid-title{
+    text-transform: uppercase;
+    color: #1CA6DD;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .btn-title{
+    margin: 0 20%;
+    background-color: #1CA6DD;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 60%;
+  }
+
+  .low-title{
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+  }
+  .low-footer{
+    background-color: #1CA6DD;
+  }
+  .tex{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: none;
+    color: #FFFFFF;
+  }
 }
