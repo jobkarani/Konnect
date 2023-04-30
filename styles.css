@@ -152,6 +152,22 @@ body,html{
     color:  #1CA6DD;
   }
 
+  .underlined {
+    position: relative;
+    margin-right: 1rem;
+  }
+  .underlined:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 7px;
+    width: 100%;
+    border: solid 6px #1CA6DD;
+    border-color: #1CA6DD transparent transparent transparent;
+    border-radius: 80%;
+  }
+
   .p{
     width: 443px;
     height: 126px;
@@ -587,6 +603,18 @@ body,html{
 
   .h3 span{
     color:  #1CA6DD;
+  }
+
+  .underlined:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 7px;
+    width: 100%;
+    border: solid 4px #1CA6DD;
+    border-color: #1CA6DD transparent transparent transparent;
+    border-radius: 80%;
   }
 
   .p{
