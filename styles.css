@@ -3,14 +3,15 @@
     padding: 0;
     box-sizing: border-box;
   }
+
 body,html{
+    font-family: 'Inter';
+    font-style: normal;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     margin: 0;
     padding: 0;
-    font-family: 'Inter';
-    font-style: normal;
 }
   
   .nav {
@@ -28,7 +29,8 @@ body,html{
     display: inline-block;
     font-size: 22px;
     color: #000;
-    padding: 0 10px;
+    padding: 0 0;
+    margin-left: -4%;
   }
   
   .nav > .nav-btn {
@@ -73,6 +75,7 @@ body,html{
 
     .nav-title img{
       width: 50%;
+      margin-left: -12%;
     }
 
     .nav > .nav-btn {
@@ -87,9 +90,7 @@ body,html{
       height: 50px;
       padding: 13px;
     }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
+   
     .nav > .nav-btn > label > span {
       display: block;
       width: 25px;
@@ -123,16 +124,19 @@ body,html{
 
   .top-banner{
     width: 100%;
-    background-image: url("https://img.freepik.com/free-photo/handsome-young-afroamerican-man-employee-feeling-excited-gesturing-actively-keeping-fists-clenched-e_1258-117643.jpg?w=826&t=st=1682743455~exp=1682744055~hmac=7997a02b27519e752c82c3db168c4fed9e6972c88e6e6159d3ce97a12749bba4");
+    height: 100%;
+    object-fit: contain;
+    background-image: url("./Images/turbo\ 1.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   .text{
     width: 100%;
-    height: 68vh;
+    height: 100vh;
     background: linear-gradient(to right, rgb(0,0,0, .9)50%, transparent 100%);
-    padding: 10% 0;
+    padding: 15% 0;
+    justify-content: right;
   }
 
   .h3{
@@ -174,6 +178,11 @@ body,html{
     margin: 0 40px;
   }
 
+  .btn-banner:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+
   .mid{
     display: flex;
     width: 100%;
@@ -187,17 +196,20 @@ body,html{
 
   .left img{
     margin: 10px 20px;
-    width: 564px;
+    width: 100%;
     height: 364px;
+    object-fit: contain;
   }
 
   .para{
     border-left: 3px solid #1CA6DD;
     border-radius: 10px;
-    float: right;
+    float: center;
     width: 70%;
-    background: #F5F5F5;
+    background: #fff;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
     padding: 10px 20px;
+    margin-left: 20%;
   }
 
   .h3{
@@ -222,6 +234,7 @@ body,html{
 
   .topper-flex{
     display: flex;
+    justify-content: center;
     width: 100%;
     gap: 10px;
   }
@@ -233,6 +246,7 @@ body,html{
   }
 
   .topper{
+    margin-top: 3px;
     width: 80%;
     padding: 10px 0;
     font-weight: 300;
@@ -244,7 +258,7 @@ body,html{
   .title{
     padding: 10px 0;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
     text-transform: capitalize;
     color: #1CA6DD;
@@ -328,6 +342,7 @@ body,html{
   .righth img{
     width: 100%;
     height: 60vh;
+    object-fit: cover;
     filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
     border-radius: 5px;
   }
@@ -357,6 +372,7 @@ body,html{
   .leftt img{
     width: 100%;
     height: 60vh;
+    object-fit: cover;
     filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
     border-radius: 5px;
   }
@@ -381,7 +397,7 @@ body,html{
   }
 
   .cards{
-    padding: 20px 10px;
+    padding: 8% 10px;
   }
   
   .h33{
@@ -394,14 +410,14 @@ body,html{
   }
 
   .cars{
-    padding: 0 40%;
+    padding: 0 0;
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (250px);
-    grid-template-columns: repeat(4, 250px);
+    -ms-grid-columns: (280px);
+    grid-template-columns: repeat(4, 280px);
     justify-content: center;
-    grid-gap: 15px;
+    grid-gap: 50px;
   }
 
   .car{
@@ -414,12 +430,12 @@ body,html{
   }
 
   .car ul li {
-    list-style-type: none;
     margin: 10px 0;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 16px;
+    margin-left: 10%;
     color: #000000;
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
   }
 
@@ -428,7 +444,7 @@ body,html{
     text-align: center;
     background-color: #1CA6DD;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 36px;
     color: #FFFFFF;
   }
@@ -443,14 +459,14 @@ body,html{
   .mbps{
     text-align: center;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 116px;
     color: #03103E;
   }
 
   .mbps span{
     font-weight: 700;
-    font-size: 66px;
+    font-size: 36px;
     line-height: 116px;
     color: #03103E;
   }
@@ -471,6 +487,8 @@ body,html{
     padding: 20px 0;
     margin-left: 15%;
     margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (150px);
@@ -487,15 +505,16 @@ body,html{
 
   .top-footer{
     width: 100%;
-    background-image: url("https://img.freepik.com/free-photo/sassy-cute-feminine-africanamerican-girl-s-headband-sweater-smiling-cheeky-flirty-look-camera-tur_1258-142573.jpg?w=826&t=st=1682766714~exp=1682767314~hmac=4ce47f19c7a739590fd3cfd5c5c7fabd42a3bdc059a0c0071e0ad822dcf386ea");
+    height: 80vh;
+    background-image: url("https://img.freepik.com/premium-photo/portrait-cool-kazakh-girl-with-curls-tattoo-dancing-posing-neon-light-isolated-studio-background_154092-19551.jpg?w=826");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .textt{
     width: 100%;
-    height: 55vh;
-    padding: 10% 0;
+    height: 80vh;
+    padding: 15% 0;
     background: linear-gradient(to right, rgb(0,0,0, .9)40%, transparent 100%);
   }
   .mid-title{
@@ -507,23 +526,30 @@ body,html{
   }
 
   .btn-title{
-    margin: 0 40%;
+    margin-left: 43%;
+    margin-top: 15%;
     background-color: #1CA6DD;
     color: #fff;
     text-align: center;
     font-size: 18px;
     padding: 10px 20px;
-    width: 20%;
+    width: 25%;
+  }
+
+  .btn-title:hover{
+    text-decoration: none;
+    color: #000;
   }
 
   .low-title{
+    margin: 20px 0;
     font-size: 36px;
     font-weight: 800;
     text-transform: capitalize;
     text-align: center;
     color: #fff;
   }
-  .low-footer{
+  .low-foot{
     background-color: #1CA6DD;
   }
   .tex{
@@ -531,20 +557,21 @@ body,html{
     text-transform: capitalize;
     padding: 20px 0;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 16px;
     line-height: 39px;
     color: #FFFFFF;
+    margin: 0;
   }
 @media only screen and (max-width: 500px) {
   .top-banner{
     width: 100%;
-    background-image: url("https://img.freepik.com/premium-photo/portrait-handsome-afro-man-using-his-mobile-street_211139-1546.jpg?size=626&ext=jpg&ga=GA1.1.1780342939.1675861927&semt=ais");
-    height: 73vh;
+    height: 60vh;
+    object-fit: contain;
   }
 
   .text{
     width: 100%;
-    height: 73vh;
+    height: 60vh;
     background: linear-gradient(to right, rgb(0,0,0, .9)0%, transparent 100%);
     padding: 20% 0;
   }
@@ -620,7 +647,7 @@ body,html{
 
   .right{
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 20px;
   }
 
   .topper-flex{
@@ -637,6 +664,7 @@ body,html{
   }
 
   .topper{
+    margin-top: 3px;
     width: 80%;
     padding: 10px 0;
     font-weight: 300;
@@ -713,6 +741,7 @@ body,html{
   .mid-2, .mid-3{
     display: block;
     width: 100%;
+    padding: 10px 20px;
   }
 
   .lefth{
@@ -733,6 +762,7 @@ body,html{
   .righth img{
     width: 100%;
     height: 30vh;
+    object-fit: cover;
     filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
     border-radius: 5px;
   }
@@ -762,6 +792,7 @@ body,html{
   .leftt img{
     width: 100%;
     height: 30vh;
+    object-fit: cover;
     filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
     border-radius: 5px;
   }
@@ -785,7 +816,7 @@ body,html{
     color: #1CA6DD;
   }
   .cards{
-    padding: 20px 10px;
+    padding: 10px 20px;
   }
   
   .h33{
@@ -798,14 +829,14 @@ body,html{
   }
 
   .cars{
-    padding: 0 20%;
+    padding: 0 20px;
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (250px);
-    grid-template-columns: repeat(1, 250px);
+    -ms-grid-columns: (300px);
+    grid-template-columns: repeat(1, 300px);
     justify-content: center;
-    grid-gap: 15px;
+    grid-gap: 0;
   }
 
   .car{
@@ -818,12 +849,12 @@ body,html{
   }
 
   .car ul li {
-    list-style-type: none;
     margin: 10px 0;
     font-weight: 300;
     font-size: 20px;
+    margin-left: 10%;
     color: #000000;
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
   }
 
@@ -847,15 +878,15 @@ body,html{
   .mbps{
     text-align: center;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 116px;
+    font-size: 20px;
+    line-height: none;
     color: #03103E;
   }
 
   .mbps span{
     font-weight: 700;
-    font-size: 66px;
-    line-height: 116px;
+    font-size: 36px;
+    line-height: none;
     color: #03103E;
   }
 
@@ -891,13 +922,15 @@ body,html{
 
   .top-footer{
     width: 100%;
-    background-image: url("https://img.freepik.com/free-photo/cheerful-afroamerican-model-sitting_23-2148440594.jpg?size=626&ext=jpg&ga=GA1.1.1780342939.1675861927&semt=ais");
+    height: 60vh;
+    background-image: url("https://img.freepik.com/free-photo/portrait-african-american-student-with-headphones-listening-music_482257-31379.jpg?w=360&t=st=1682828426~exp=1682829026~hmac=82a53b531e5f8caa57c34f84ace02efc4083de4872976fb0545b093f9f4965b6");
+    object-fit: contain;
   }
 
   .textt{
     width: 100%;
-    height: 55vh;
-    padding: 30% 0;
+    height: 60vh;
+    padding: 45% 0;
     background: linear-gradient(to right, rgb(0,0,0, .9)0%, transparent 100%);
   }
   .mid-title{
@@ -909,7 +942,7 @@ body,html{
   }
 
   .btn-title{
-    margin: 0 20%;
+    margin: 0 22%;
     background-color: #1CA6DD;
     color: #fff;
     text-align: center;
@@ -919,6 +952,7 @@ body,html{
   }
 
   .low-title{
+    margin: 8% 0;
     font-size: 26px;
     font-weight: 800;
     text-transform: capitalize;
@@ -933,7 +967,7 @@ body,html{
     text-transform: capitalize;
     padding: 20px 0;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: none;
     color: #FFFFFF;
   }
